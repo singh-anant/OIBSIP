@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  margin: 40px;
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  overflow-y: scroll;
+}
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addNew {
+  display: flex;
+  background-color: rgba(35, 84, 119, 0.477);
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+#addNew:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.fa-plus {
+  /* background-color: #58136f; */
+  padding: 3px;
+}
+#tasks div {
+  background-color: rgba(35, 84, 119, 0.477);
+  padding: 5px;
+  border-radius: 6px;
+  display: grid;
+  gap: 4px;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(138, 53, 53) 0px 0px 0px 3px; */
+  transition: 0.3s ease-in-out;
+}
+#tasks div:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  /* background-color: rgba(69, 15, 86, 0.741); */
+}
+#tasks {
+  display: grid;
+  gap: 20px;
+}
+.date {
+  font-size: 12px;
+  color: rgba(3, 3, 3, 0.636);
+}
+.options {
+  /* background-color: aqua; */
+  justify-self: center;
+  display: flex;
+  gap: 12px;
+}
+.options i {
+  cursor: pointer;
+}
+#message {
+  color: red;
+}
