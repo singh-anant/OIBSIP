@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="
+   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="projectcss.css" />
+    <link rel="icon" href="../images/icon.png" type="image/x-icon" />
+
+    <title>My Projects</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container-1">
+        <!-- -------------------------- -->
+        <!-- NavBar -->
+        <div class="navbar">
+          <div class="logo">
+            <a href="../index.html" id="logo">Anant.dev</a>
+          </div>
+          <nav id="menu">
+            <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="../About/about.html">ABOUT</a></li>
+              <li><a href="../Contact/contact.html">CONTACT ME</a></li>
+            </ul>
+            <i class="fas fa-times" onclick="closeIt()"></i>
+          </nav>
+          <i class="fas fa-bars" onclick="openIt()"></i>
+        </div>
+
+        <!-- ------------------------------------------------------------------------------------ -->
+
+        <h2 class="common-heading">PROJECTS</h2>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="image">
+          <img src="../images/Pro/CommingSoon.png" alt="1" />
+          <div class="details">
+            <h2>It's<span> a Secret🤫🤫</span></h2>
+
+            <div class="code">
+              <a href="#" class="view-code">View <span>Code</span></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="../images/Pro/bankers.jpg" alt="1" />
+
+          <div class="details">
+            <h2>Banking<span> System💵💵</span></h2>
+
+            <div class="code">
+              <a
+                href="https://github.com/singh-anant/TheBankers"
+                class="view-code"
+                >View <span>Code</span></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="../images/Pro/weatherapp.png" alt="1" />
+
+          <div class="details">
+            <h2>Weather<span> App😶‍🌫️😶‍🌫️</span></h2>
+
+            <div class="code">
+              <a
+                href="https://github.com/singh-anant/TheWeatherAPI"
+                class="view-code"
+                >View <span>Code</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="image">
+          <img src="../images/Pro/calculatorJS.png" alt="1" />
+          <div class="details">
+            <h2>Calculator<span> JS🧮🧮</span></h2>
+
+            <div class="code">
+              <a
+                href="https://github.com/singh-anant/Calculator_Dark_Light"
+                class="view-code"
+                >View <span>Code</span></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="../images/Pro/YT.png" alt="1" />
+
+          <div class="details">
+            <h2>Youtube<span> Clone📽️📽️</span></h2>
+
+            <div class="code">
+              <a
+                href="https://github.com/singh-anant/Youtube-clone"
+                class="view-code"
+                >View <span>Code</span></a
+              >
+            </div>
+          </div>
+        </div>
+
+        <div class="image">
+          <img src="../images/Pro/TodoList.png" alt="1" />
+
+          <div class="details">
+            <h2>Todo<span> App📃📃</span></h2>
+
+            <div class="code">
+              <a
+                href="https://github.com/singh-anant/react-todojs"
+                class="view-code"
+                >View <span>Code</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Developed by Anant Singh🥷</p>
+    </footer>
+    <!-- Menu-Bar -->
+    <script>
+      var menu = document.getElementById("menu");
+      function closeIt() {
+        menu.style.top = "-100vh";
+      }
+      function openIt() {
+        menu.style.top = "0";
+      }
+    </script>
+  </body>
+</html>

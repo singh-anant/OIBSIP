@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="icon" href="../images/icon.png" type="image/x-icon" />
+
+    <link rel="stylesheet" href="contactcss.css" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container-1">
+        <!-- -------------------------- -->
+        <!-- NavBar -->
+        <div class="navbar">
+          <div class="logo">
+            <a href="../index.html" id="logo">Anant.dev</a>
+          </div>
+          <nav id="menu">
+            <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="../About/about.html">ABOUT</a></li>
+              <li><a href="../Project/project.html">PROJECT</a></li>
+            </ul>
+            <i class="fas fa-times" onclick="closeIt()"></i>
+          </nav>
+          <i class="fas fa-bars" onclick="openIt()"></i>
+        </div>
+
+        <!-- ------------------------------------------------------------------------------------ -->
+        <h2 class="common-heading">CONNECT WITH ME</h2>
+      </div>
+    </section>
+
+    <div class="contact-box">
+      <div class="contact-left">
+        <h3>Send us email</h3>
+        <form action="https://formspree.io/f/xdovkvrj" method="POST">
+          <div class="input-row">
+            <div class="input-group">
+              <label for="">Name</label>
+              <input type="text" placeholder="Ichigo Kurosaki" name="Name" />
+            </div>
+            <div class="input-group">
+              <label for="">Phone</label>
+              <input type="text" placeholder="699-699-699" name="Phone no" />
+            </div>
+          </div>
+
+          <div class="input-row">
+            <div class="input-group">
+              <label for="">Email</label>
+              <input
+                type="email"
+                placeholder="tensazanpakto@gmail.com"
+                name="Email"
+              />
+            </div>
+            <div class="input-group">
+              <label for="">Subject</label>
+              <input type="text" placeholder="Any issue!!" name="Subject" />
+            </div>
+          </div>
+          <label for="">Message</label>
+          <textarea
+            name=""
+            placeholder="Just write it.."
+            rows="5"
+            name="Message"
+          ></textarea>
+          <button type="submit">SEND</button>
+        </form>
+      </div>
+      <div class="contact-right">
+        <h3>Just reach me</h3>
+        <table>
+          <tr>
+            <td><i class="fas fa-envelope"></i></td>
+            <td>
+              <a target="_blank" href="mailto:anantsingh3366@gmail.com"
+                >anantsingh3346@gamil.com</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-linkedin"></i></td>
+            <td>
+              <a
+                href="https://www.linkedin.com/in/anant-singh-64b45420a/"
+                target="_blank"
+                >Anant Singh</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-github"></i></td>
+            <td>
+              <a target="_blank" href="https://github.com/singh-anant"
+                >Anant-Singh1</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><i class="fab fa-medium"></i></td>
+            <td>
+              <a target="_blank" href="https://medium.com/@anantsingh3346"
+                >anantsingh3346</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><i class="fa-solid fa-code"></i></td>
+            <td>
+              <a target="_blank" href="https://leetcode.com/singh-anant/"
+                >Anant-Singh1</a
+              >
+            </td>
+          </tr>
+
+          <tr>
+            <td><i class="fa-brands fa-twitter"></i></td>
+            <td>
+              <a target="_blank" href="https://mobile.twitter.com/Anant__Singh_"
+                >@Anant__Singh_</a
+              >
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <footer>
+      <p>Developed by Anant Singh🥷</p>
+    </footer>
+    <!-- Menu-Bar -->
+    <script>
+      var menu = document.getElementById("menu");
+      function closeIt() {
+        menu.style.top = "-100vh";
+      }
+      function openIt() {
+        menu.style.top = "0";
+      }
+    </script>
+  </body>
+</html>

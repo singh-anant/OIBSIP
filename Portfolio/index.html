@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="
+   https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="images/icon.png" type="image/x-icon" />
+    <title>Portfolio </title>
+  </head>
+  <body>
+    <!-- HOME -->
+    <section class="header" id="HOME">
+      <div class="container-1">
+        <!-- -------------------------- -->
+        <!-- NavBar -->
+        <div class="navbar">
+          <div class="logo" >
+            <a href="index.html" id="logo">Anant.dev</a>
+          </div>
+          <nav id="menu">
+            <ul>
+              <li><a href="./About/about.html">ABOUT</a></li>
+              <li><a href="./Project/project.html">PROJECTS</a></li>
+              <li><a href="./Contact/contact.html">CONTACT ME</a></li>
+              
+            </ul>
+            <i class="fas fa-times" onclick="closeIt()"></i>
+          </nav>
+            <i class="fas fa-bars" onclick="openIt()"></i>
+        </div>
+
+<!-- ------------------------------------------------------------------------------------ -->
+      <div class="intro-container">
+        <div class="dev-info">
+          <div class="title">Hello,I am</div>
+          <div class="name"><span class="auto-type"></span></div>
+          <div class="about-para">I am a Web-Developer from India.</div>
+          <button class="cv-btn" ><a href="./Resume/Anant_Singh_Resume_.pdf" target="_blank" >Download CV</a></button>
+        </div>
+        <div class="profile-pic">
+          <!-- <img src="images/Ardoodle.jpg" alt="" /> -->
+          <img src="images/homies.gif" alt="" />
+        </div>
+      </div>
+    </section>
+     <footer>
+      <p>Developed by Anant Singh🥷</p>
+    </footer>
+    <!-- About -->
+    <!-- AutoType -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".auto-type", {
+        strings: ["Anant Singh"],
+        typeSpeed: 170,
+        backSpeed: 170,
+        loop: true,
+      });
+    </script>
+    <!-- Menu-Bar -->
+    <script>
+      var menu = document.getElementById("menu");
+      function closeIt() {
+        menu.style.top = "-100vh";
+      }
+      function openIt() {
+        menu.style.top = "0";
+      }
+    </script>
+  </body>
+</html>

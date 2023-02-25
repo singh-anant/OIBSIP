@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../images/icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="aboutcss.css" />
+    <link
+      rel="stylesheet"
+      href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>About Me</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="container-1">
+        <!-- -------------------------- -->
+        <!-- NavBar -->
+        <div class="navbar">
+          <div class="logo">
+            <a href="../index.html" id="logo">Anant.dev</a>
+          </div>
+          <nav id="menu">
+            <ul>
+              <li><a href="../index.html">HOME</a></li>
+              <li><a href="../Project/project.html">PROJECTS</a></li>
+              <li><a href="../Contact/contact.html">CONTACT ME</a></li>
+            </ul>
+            <i class="fas fa-times" onclick="closeIt()"></i>
+          </nav>
+          <i class="fas fa-bars" onclick="openIt()"></i>
+        </div>
+
+        <!-- ------------------------------------------------------------------------------------ -->
+        <h2 class="common-heading">ABOUT ME</h2>
+      </div>
+    </section>
+    <div class="about-section">
+      <div class="about-left">
+        <div class="about-left-content">
+          <div>
+            <div class="shadow">
+              <div class="about-img">
+                <img src="../images/hmmm.png" alt="" />
+              </div>
+            </div>
+            <h2>
+              Anant <br />
+              Singh
+            </h2>
+            <h3>CS Undergraduate</h3>
+          </div>
+
+          <ul class="icons">
+            <li>
+              <a target="_blank" href="https://mobile.twitter.com/Anant__Singh_"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="https://www.linkedin.com/in/anant-singh-64b45420a/"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a target="_blank" href="https://github.com/singh-anant"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <h1>About<span> ME</span></h1>
+
+        <div class="about-para">
+          <p>
+            Hey Devs..My name is Anant Singh.I am Computer Science Undergraduate
+            and Web Developer from India. Currently I am pursuing my B.Tech
+            degree with specialization of Full Stack and Devops from Dehradun
+            Institute of Tecnology. It's my prefinal year and I am on a journey
+            to develop and become the best version of myself. Also Knowing
+            technical skills such as data structures, database management.
+            Currently I am focussing on Mern Stack Development.Nice to meet
+            you..
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Developed by Anant Singh🥷</p>
+    </footer>
+    <!-- Menu-Bar -->
+    <script>
+      var menu = document.getElementById("menu");
+      function closeIt() {
+        menu.style.top = "-100vh";
+      }
+      function openIt() {
+        menu.style.top = "0";
+      }
+    </script>
+  </body>
+</html>

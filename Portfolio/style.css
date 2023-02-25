@@ -1,0 +1,240 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rajdhani", sans-serif;
+}
+body {
+  transition: 0.3s ease;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.451);
+  position: relative;
+}
+/* -------------------------------------------- */
+/* NavBar */
+/* .navbar {
+  justify-content: space-around;
+  padding: auto;
+} */
+
+.container-1 {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  padding-top: 2rem;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  padding: 5px 2px;
+}
+
+nav ul li a:hover {
+  font-weight: bolder;
+  border-bottom: 5px solid rgb(168, 20, 194);
+}
+.fa-times {
+  opacity: 0;
+}
+.fa-bars {
+  opacity: 0;
+}
+.navbar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.logo a {
+  text-decoration: none;
+  font-size: 40px;
+  color: #000;
+}
+
+@media only screen and (max-width: 728px) {
+  nav {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: rgb(159, 57, 177);
+    z-index: 2;
+    top: -100vh;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: 1s;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(159, 57, 177);
+  }
+  nav ul li {
+    list-style: none;
+    margin: 20px auto;
+  }
+  nav ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: azure;
+    background-color: rgb(159, 57, 177);
+    position: relative;
+  }
+  nav ul li a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: rgb(246, 246, 246);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.8s;
+  }
+  nav ul li a:hover::after {
+    width: 100%;
+    font-weight: lighter;
+  }
+
+  .fa-times {
+    opacity: 1;
+    /* width: 25px; */
+    font-weight: light;
+    font-size: 30px;
+    position: absolute;
+    right: 80px;
+    top: 50px;
+    color: azure;
+    background-color: rgb(159, 57, 177);
+    cursor: pointer;
+  }
+
+  .fa-bars {
+    opacity: 1;
+    cursor: pointer;
+    font-weight: light;
+    font-size: 30px;
+    position: absolute;
+    color: #000;
+    right: 50px;
+    top: 45px;
+  }
+}
+/* -------------------------------------------- */
+
+/* Home--Section */
+.intro-container {
+  margin: 150px auto;
+  display: flex;
+  justify-content: space-around;
+}
+.dev-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  line-height: 70px;
+}
+
+.title {
+  font-size: 65px;
+  color: #fff;
+  color: #000;
+  font-weight: 600;
+}
+.name {
+  font-size: 80px;
+  font-weight: 800;
+  color: #fff;
+  color: #000;
+}
+.about-para {
+  font-size: 44px;
+  color: #fff;
+  color: #000;
+  font-weight: 600;
+  line-height: 50px;
+}
+.profile-pic img {
+  width: 340px;
+  height: 360px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.profile-pic img:hover {
+  transform: rotate(5deg);
+  box-shadow: rgba(137, 12, 153, 0.71) 0px 2px 20px 0px,
+    rgba(125, 14, 153, 0.823) 0px 2px 20px 0px;
+}
+.cv-btn {
+  margin-top: 34px;
+  padding: 12px;
+  color: rgba(255, 255, 255, 0.968);
+  border: none;
+  background-color: rgb(168, 20, 194);
+  font-weight: 600;
+  font-size: 21px;
+  margin: 20px 2px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.cv-btn a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.968);
+}
+.cv-btn:hover {
+  background-color: rgb(117, 6, 137);
+  color: white;
+}
+
+@media (max-width: 1096px) {
+  .intro-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .dev-info {
+    justify-content: center;
+    align-items: center;
+  }
+  .header {
+    min-height: 110vh;
+  }
+  .about-para {
+    font-size: 30px;
+  }
+  .name {
+    font-size: 70px;
+  }
+}
+footer {
+  height: 10vh;
+  width: 100%;
+  color: #232527;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(53, 62, 62, 0);
+}
+
+footer p {
+  font-size: 20px;
+}
