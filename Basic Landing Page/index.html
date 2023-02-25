@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <title>Meta</title>
+  </head>
+  <body>
+    <section class="header">
+      <nav>
+        <a href="index.html"><img src="images/log0w.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark v" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-sharp fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Worlds's Biggest Virtual Universe</h1>
+        <p>
+          Welcome to the world biggest universe. <br />
+          The Metaverse.The world created to make the multiverse
+        </p>
+        <a class="hero-btn" href="">Visit our Universe</a>
+      </div>
+    </section>
+
+    <!--Virtual Reality  -->
+    <section class="vr">
+      <h1>Differtent World which you can visit</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+        itaque magni numquam! Voluptatum odit quas nulla ea porro? Numquam
+        reiciendis iure asperiores quis laboriosam quo maxime, cum amet sit
+        facilis?
+      </p>
+      <div class="row">
+        <div class="vr-column">
+          <h3>Technology</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Dignissimos exercitationem nesciunt omnis ipsa eos quis ex
+            praesentium, odio temporibus delectus incidunt quisquam iure, at,
+            perferendis quasi eligendi ad dolorem voluptatem.
+          </p>
+        </div>
+        <div class="vr-column">
+          <h3>Music</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Dignissimos exercitationem nesciunt omnis ipsa eos quis ex
+            praesentium, odio temporibus delectus incidunt quisquam iure, at,
+            perferendis quasi eligendi ad dolorem voluptatem.
+          </p>
+        </div>
+        <div class="vr-column">
+          <h3>Games</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Dignissimos exercitationem nesciunt omnis ipsa eos quis ex
+            praesentium, odio temporibus delectus incidunt quisquam iure, at,
+            perferendis quasi eligendi ad dolorem voluptatem.
+          </p>
+        </div>
+      </div>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
