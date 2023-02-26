@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    #30e8bf,
+    #ff8235
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 80px;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.input {
+  flex: 1 1 40%;
+  margin: 25px;
+  appearance: none;
+  background: none;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  font-size: 25px;
+}
+
+.input:focus {
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.2);
+}
